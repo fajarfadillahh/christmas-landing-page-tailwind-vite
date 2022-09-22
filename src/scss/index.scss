@@ -1,0 +1,33 @@
+/* ===== FONT GOOGLE ===== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* ===== Add the Tailwind directives to your CSS ===== */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// ===== REUSABLE CSS CLASS =====
+@layer components {
+  // section class
+  .section {
+    @apply pt-32 pb-16;
+
+    &-title {
+      @apply text-[24px] text-black font-semibold leading-title mb-4;
+    }
+
+    &-text {
+      @apply text-[15px] leading-text;
+    }
+  }
+
+  // button class
+  .button {
+    @apply inline-block py-4 px-10 bg-red-500 rounded-full text-[15px] text-white font-semibold uppercase transition-all duration-400;
+  }
+
+  // container class
+  .container {
+    @apply max-w-[1024px] w-[calc(100%-3rem)] mx-auto;
+  }
+}
