@@ -193,3 +193,8 @@
     @apply top-[85%] -right-16 lg:top-[40%] lg:-right-16;
   }
 }
+
+// ===== ::SELECTION =====
+::selection {
+  @apply bg-red-500 text-white;
+}
