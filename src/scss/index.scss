@@ -49,3 +49,28 @@
     @apply text-[15px] text-black font-medium hover:text-red-500;
   }
 }
+
+// ===== GIVING SECTION =====
+.giving {
+  &__content {
+    @apply grid gap-2 text-center;
+
+    &:hover {
+      .giving__content-img {
+        @apply -translate-y-[6px];
+      }
+    }
+
+    &-img {
+      @apply w-[100px] justify-self-center transition-all duration-400;
+    }
+
+    &-title {
+      @apply text-[18px] text-black font-semibold mb-2;
+    }
+
+    &-text {
+      @apply text-[15px];
+    }
+  }
+}
