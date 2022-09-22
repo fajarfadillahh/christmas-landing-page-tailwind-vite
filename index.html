@@ -47,8 +47,11 @@
           Christmas.
         </a>
 
-        <div class="header__menu" id="header-menu">
-          <ul class="header__list flex flex-col gap-6">
+        <div
+          class="header__menu md:flex md:items-center md:gap-6"
+          id="header-menu"
+        >
+          <ul class="header__list flex flex-col gap-6 md:flex-row">
             <li class="header__item">
               <a href="#" class="header__link">Home</a>
             </li>
@@ -63,16 +66,18 @@
             </li>
           </ul>
 
-          <a href="#" class="header__button button mt-6">Create account</a>
+          <a href="#" class="header__button button mt-6 md:mt-0"
+            >Create account</a
+          >
 
           <img
             src="./src/img/nav-light.png"
             alt=""
-            class="header__img absolute w-[100px] top-0 left-0 -rotate-[15deg]"
+            class="header__img absolute w-[100px] top-0 left-0 -rotate-[15deg] md:hidden"
           />
 
           <div
-            class="header__close absolute top-10 right-6 inline-flex text-[1.5rem] text-black cursor-pointer"
+            class="header__close absolute top-10 right-6 inline-flex text-[1.5rem] text-black cursor-pointer md:hidden"
             id="header-close"
           >
             <i class="bx bx-x"></i>
@@ -80,7 +85,7 @@
         </div>
 
         <div
-          class="header__toggle inline-flex text-[1.5rem] text-black cursor-pointer"
+          class="header__toggle inline-flex text-[1.5rem] text-black cursor-pointer md:hidden"
           id="header-toggle"
         >
           <i class="bx bx-grid-alt"></i>
@@ -92,14 +97,16 @@
     <main class="main overflow-hidden">
       <!-- ===== HOME SECTION ===== -->
       <section class="home section">
-        <div class="home__container container grid gap-8">
+        <div
+          class="home__container container grid gap-8 md:grid-cols-2 md:items-center"
+        >
           <img
             src="./src/img/home.png"
             alt=""
             class="home__img justify-self-center"
           />
 
-          <div class="home__data justify-self-center text-center">
+          <div class="home__data justify-self-center text-center md:text-left">
             <h1 class="home__title section-title">
               Merry Christmas and <br />
               Happy New Year!
@@ -125,7 +132,7 @@
           </div>
 
           <div
-            class="giving__group grid grid-cols-2 gap-x-6 gap-y-10 xs:grid-cols-[repeat(2,142px)] xs:justify-center xs:gap-x-10 xs:gap-y-12"
+            class="giving__group grid grid-cols-2 gap-x-6 gap-y-10 xs:grid-cols-[repeat(2,142px)] xs:justify-center xs:gap-x-10 xs:gap-y-12 md:grid-cols-[repeat(repeat(3,142px))] md:gap-x-20"
           >
             <div class="giving__content">
               <img
@@ -176,13 +183,19 @@
 
       <!-- ===== CELEBRATE SECTION ===== -->
       <section class="celebrate section">
-        <div class="celebrate__container container grid gap-8">
-          <div class="celebrate__data justify-self-center text-center">
+        <div
+          class="celebrate__container container grid gap-8 md:grid-cols-2 md:items-center"
+        >
+          <div
+            class="celebrate__data justify-self-center text-center md:text-left"
+          >
             <h1 class="celebrate__title section-title">
               Celebrate With A <br />
               Lot Of Love
             </h1>
-            <p class="celebrate__text section-text w-[320px] xs:w-[390px]">
+            <p
+              class="celebrate__text section-text w-[320px] xs:w-[390px] md:w-auto"
+            >
               In this holidays, celebrate with much love and peace, offering
               many blessings to our loved ones, friends and neighbors, wishing
               them a good Christmas message.
@@ -209,7 +222,7 @@
           </div>
 
           <div
-            class="gift__group grid grid-cols-2 gap-6 xs:grid-cols-[repeat(2,180px)] xs:justify-center xs:gap-8"
+            class="gift__group grid grid-cols-2 gap-6 xs:grid-cols-[repeat(2,180px)] xs:justify-center xs:gap-8 md:grid-cols-[repeat(2,180px)] md:gap-10"
           >
             <div class="gift__content">
               <img src="./src/img/gift1.png" alt="" class="gift__content-img" />
@@ -337,7 +350,7 @@
       <!-- ===== MESSAGE SECTION ===== -->
       <section class="message section">
         <div
-          class="message__container container grid gap-8 py-16 px-6 bg-red-500 rounded-3xl"
+          class="message__container container grid gap-8 py-16 px-6 bg-red-500 rounded-3xl md:grid-cols-2 md:items-center"
         >
           <form action="" class="message__form justify-self-center text-center">
             <h1 class="message__form-title section-title text-white">
@@ -371,7 +384,7 @@
     <footer class="footer pt-32 pb-8 overflow-hidden">
       <div class="footer__container container grid gap-24">
         <div
-          class="footer__group relative grid gap-8 xs:grid-cols-2 xs:gap-x-0"
+          class="footer__group relative grid gap-8 xs:grid-cols-2 xs:gap-x-0 md:grid-cols-3"
         >
           <div>
             <a
