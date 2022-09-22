@@ -13,7 +13,7 @@
     @apply pt-32 pb-16;
 
     &-title {
-      @apply text-[24px] text-black font-semibold leading-title mb-4;
+      @apply text-[24px] text-black font-semibold leading-title mb-4 lg:text-[36px];
     }
 
     &-text {
@@ -67,11 +67,11 @@
     }
 
     &-img {
-      @apply w-[100px] justify-self-center transition-all duration-400;
+      @apply w-[100px] justify-self-center transition-all duration-400 lg:w-[150px];
     }
 
     &-title {
-      @apply text-[18px] text-black font-semibold mb-2;
+      @apply text-[18px] text-black font-semibold mb-2 lg:text-[20px];
     }
 
     &-text {
@@ -83,7 +83,7 @@
 // ===== GIFT SECTION =====
 .gift {
   &__content {
-    @apply relative grid gap-2 py-6 px-4 bg-white rounded-xl shadow-[0_4px_16px_rgb(48_29_30/10%)];
+    @apply relative grid gap-2 py-6 px-4 bg-white rounded-xl shadow-[0_4px_16px_rgb(48_29_30/10%)] lg:py-8 lg:px-6;
 
     &:hover {
       .gift__content-img {
@@ -96,11 +96,11 @@
     }
 
     &-img {
-      @apply w-[100px] justify-self-center transition-all duration-400;
+      @apply w-[100px] justify-self-center transition-all duration-400 lg:w-[150px];
     }
 
     &-price {
-      @apply text-[18px] text-black font-semibold mb-1;
+      @apply text-[18px] text-black font-semibold mb-1 lg:text-[20px];
     }
 
     &-text {
@@ -112,7 +112,7 @@
 // ===== NEW SECTION =====
 .new {
   &__content {
-    @apply relative grid gap-12 w-[230px] py-6 px-4 bg-white shadow-[0_4px_16px_hsla(355,25%,15%,0.1)] rounded-xl text-center mb-16 overflow-hidden;
+    @apply relative grid gap-12 w-[230px] py-6 px-4 bg-white shadow-[0_4px_16px_hsla(355,25%,15%,0.1)] rounded-xl text-center mb-16 overflow-hidden lg:w-[250px];
 
     &:hover {
       .new__content-img {
@@ -129,7 +129,7 @@
     }
 
     &-price {
-      @apply text-[18px] text-black font-semibold mb-1;
+      @apply text-[18px] text-black font-semibold mb-1 lg:text-[20px];
     }
 
     &-text {
@@ -160,7 +160,7 @@
 // ===== FOOTER SECTION =====
 .footer {
   &__title {
-    @apply text-[18px] text-black font-semibold mb-4;
+    @apply text-[18px] text-black font-semibold mb-4 lg:text-[20px];
   }
 
   &__links,
@@ -178,7 +178,7 @@
 
   &__img1,
   &__img2 {
-    @apply absolute w-[100px] transition-all duration-400;
+    @apply absolute w-[100px] transition-all duration-400 lg:w-[130px];
 
     &:hover {
       @apply -translate-y-[6px];
@@ -186,10 +186,10 @@
   }
 
   &__img1 {
-    @apply top-[25%] right-4;
+    @apply top-[25%] right-4 lg:top-full lg:left-0;
   }
 
   &__img2 {
-    @apply top-[85%] -right-16;
+    @apply top-[85%] -right-16 lg:top-[40%] lg:-right-16;
   }
 }

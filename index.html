@@ -51,7 +51,7 @@
           class="header__menu md:flex md:items-center md:gap-6"
           id="header-menu"
         >
-          <ul class="header__list flex flex-col gap-6 md:flex-row">
+          <ul class="header__list flex flex-col gap-6 md:flex-row lg:gap-8">
             <li class="header__item">
               <a href="#" class="header__link">Home</a>
             </li>
@@ -98,16 +98,16 @@
       <!-- ===== HOME SECTION ===== -->
       <section class="home section">
         <div
-          class="home__container container grid gap-8 md:grid-cols-2 md:items-center"
+          class="home__container container grid gap-8 md:grid-cols-2 md:items-center lg:gap-4"
         >
           <img
             src="./src/img/home.png"
             alt=""
-            class="home__img justify-self-center"
+            class="home__img justify-self-center lg:w-[500px]"
           />
 
           <div class="home__data justify-self-center text-center md:text-left">
-            <h1 class="home__title section-title">
+            <h1 class="home__title section-title lg:text-[40px]">
               Merry Christmas and <br />
               Happy New Year!
             </h1>
@@ -132,7 +132,7 @@
           </div>
 
           <div
-            class="giving__group grid grid-cols-2 gap-x-6 gap-y-10 xs:grid-cols-[repeat(2,142px)] xs:justify-center xs:gap-x-10 xs:gap-y-12 md:grid-cols-[repeat(repeat(3,142px))] md:gap-x-20"
+            class="giving__group grid grid-cols-2 gap-x-6 gap-y-10 xs:grid-cols-[repeat(2,142px)] xs:justify-center xs:gap-x-10 xs:gap-y-12 md:grid-cols-[repeat(3,142px)] md:gap-x-20 lg:grid-cols-[repeat(3,170px)]"
           >
             <div class="giving__content">
               <img
@@ -194,7 +194,7 @@
               Lot Of Love
             </h1>
             <p
-              class="celebrate__text section-text w-[320px] xs:w-[390px] md:w-auto"
+              class="celebrate__text section-text w-[320px] xs:w-[390px] md:w-auto lg:w-[430px]"
             >
               In this holidays, celebrate with much love and peace, offering
               many blessings to our loved ones, friends and neighbors, wishing
@@ -208,7 +208,7 @@
           <img
             src="./src/img/celebrate.png"
             alt=""
-            class="celebrate__img justify-self-center"
+            class="celebrate__img justify-self-center lg:w-[500px]"
           />
         </div>
       </section>
@@ -222,7 +222,7 @@
           </div>
 
           <div
-            class="gift__group grid grid-cols-2 gap-6 xs:grid-cols-[repeat(2,180px)] xs:justify-center xs:gap-8 md:grid-cols-[repeat(2,180px)] md:gap-10"
+            class="gift__group grid grid-cols-2 gap-6 xs:grid-cols-[repeat(2,180px)] xs:justify-center xs:gap-8 md:grid-cols-[repeat(3,200px)] md:gap-10"
           >
             <div class="gift__content">
               <img src="./src/img/gift1.png" alt="" class="gift__content-img" />
@@ -350,9 +350,12 @@
       <!-- ===== MESSAGE SECTION ===== -->
       <section class="message section">
         <div
-          class="message__container container grid gap-8 py-16 px-6 bg-red-500 rounded-3xl md:grid-cols-2 md:items-center"
+          class="message__container container grid gap-8 py-16 px-6 bg-red-500 rounded-3xl md:grid-cols-2 md:items-center lg:py-24 lg:grid-cols-[repeat(2,max-content)] lg:justify-center lg:gap-0"
         >
-          <form action="" class="message__form justify-self-center text-center">
+          <form
+            action=""
+            class="message__form justify-self-center text-center lg:text-left"
+          >
             <h1 class="message__form-title section-title text-white">
               Send Good <br />
               Wishes!
@@ -364,7 +367,7 @@
               class="message__form-input w-full py-4 px-8 bg-white text-[15px] text-black font-medium rounded-full mb-4 placeholder:text-[15px] placeholder:text-grey-600 placeholder:font-medium xs:w-[80%]"
             />
             <button
-              class="message__form-button button bg-black w-full xs:w-[80%]"
+              class="message__form-button button bg-black w-full xs:w-[80%] lg:w-[initial]"
             >
               Send Message
             </button>
@@ -373,7 +376,7 @@
           <img
             src="./src/img/message.png"
             alt=""
-            class="message__img w-[200px] rotate-[15deg] justify-self-center"
+            class="message__img w-[200px] rotate-[15deg] justify-self-center lg:w-[350px]"
           />
         </div>
       </section>
@@ -384,7 +387,7 @@
     <footer class="footer pt-32 pb-8 overflow-hidden">
       <div class="footer__container container grid gap-24">
         <div
-          class="footer__group relative grid gap-8 xs:grid-cols-2 xs:gap-x-0 md:grid-cols-3"
+          class="footer__group relative grid gap-8 xs:grid-cols-2 xs:gap-x-0 md:grid-cols-3 lg:grid-cols-4 lg:justify-items-center"
         >
           <div>
             <a
