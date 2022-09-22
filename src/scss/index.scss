@@ -34,6 +34,11 @@
 
 // ===== HEADER SECTION =====
 .header {
+  // sticky action
+  &.sticky-action {
+    @apply shadow-[0_2px_8px_hsla(0,4%,15%,0.1)];
+  }
+
   &__menu {
     @media screen and (max-width: 767px) {
       @apply fixed w-full -top-full left-0 text-center py-16 bg-white rounded-[0_0_1.5rem_1.5rem] shadow-[0_2px_8px_hsl(0deg_4%_15%/10%)] transition-all duration-400;
