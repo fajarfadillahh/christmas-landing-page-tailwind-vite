@@ -151,3 +151,40 @@
     }
   }
 }
+
+// ===== FOOTER SECTION =====
+.footer {
+  &__title {
+    @apply text-[18px] text-black font-semibold mb-4;
+  }
+
+  &__links,
+  &__aviables {
+    @apply flex flex-col gap-3;
+
+    &-img {
+      @apply w-[100px];
+    }
+  }
+
+  &__link {
+    @apply text-[15px] text-grey-600 hover:text-red-500 hover:underline;
+  }
+
+  &__img1,
+  &__img2 {
+    @apply absolute w-[100px] transition-all duration-400;
+
+    &:hover {
+      @apply -translate-y-[6px];
+    }
+  }
+
+  &__img1 {
+    @apply top-[25%] right-8;
+  }
+
+  &__img2 {
+    @apply top-[75%] -right-16;
+  }
+}
