@@ -17,3 +17,21 @@ function showMenu(menuId, toggleId, closeId) {
   }
 }
 showMenu("header-menu", "header-toggle", "header-close");
+
+// ===== SWIPER NEW SECTION =====
+let newSwiper = new Swiper(".new-swiper", {
+  spaceBetween: 24,
+  loop: "true",
+  slidesPerView: "auto",
+  centeredSlides: true,
+
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+  },
+  breakpoints: {
+    992: {
+      spaceBetween: 80,
+    },
+  },
+});
