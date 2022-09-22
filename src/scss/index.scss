@@ -198,3 +198,16 @@
 ::selection {
   @apply bg-red-500 text-white;
 }
+
+// ===== ::-WEBKIT-SCROLLBAR =====
+::-webkit-scrollbar {
+  @apply w-[8px] bg-[rgba(0,0,0,0.02)];
+
+  &-thumb {
+    @apply bg-[rgba(0,0,0,0.2)] rounded-full;
+
+    &:hover {
+      @apply bg-[rgba(0,0,0,0.3)];
+    }
+  }
+}
