@@ -27,6 +27,68 @@
     />
   </head>
   <body class="font-body font-reguler text-grey-500">
+    <!-- ===== HEADER SECTION ===== -->
+    <header
+      class="header fixed w-full top-0 left-0 bg-white z-50 transition-all duration-400"
+      id="header"
+    >
+      <div
+        class="header__container container h-24 flex justify-between items-center"
+      >
+        <a
+          href="#"
+          class="header__logo inline-flex items-center gap-1 text-[18px] text-black font-semibold"
+        >
+          <img
+            src="./src/img/favicon.png"
+            alt=""
+            class="header__logo-icon w-6"
+          />
+          Christmas.
+        </a>
+
+        <div class="header__menu" id="header-menu">
+          <ul class="header__list flex flex-col gap-6">
+            <li class="header__item">
+              <a href="#" class="header__link">Home</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Celebrate</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Gifts</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">New Product</a>
+            </li>
+          </ul>
+
+          <a href="#" class="header__button button mt-6">Create account</a>
+
+          <img
+            src="./src/img/nav-light.png"
+            alt=""
+            class="header__img absolute w-[100px] top-0 left-0 -rotate-[15deg]"
+          />
+
+          <div
+            class="header__close absolute top-10 right-6 inline-flex text-[1.5rem] text-black cursor-pointer"
+            id="header-close"
+          >
+            <i class="bx bx-x"></i>
+          </div>
+        </div>
+
+        <div
+          class="header__toggle inline-flex text-[1.5rem] text-black cursor-pointer"
+          id="header-toggle"
+        >
+          <i class="bx bx-menu"></i>
+        </div>
+      </div>
+    </header>
+    <!-- ===== HEADER SECTION ===== -->
+
     <!-- ===== SWIPER JS ===== -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
