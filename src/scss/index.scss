@@ -74,3 +74,32 @@
     }
   }
 }
+
+// ===== GIFT SECTION =====
+.gift {
+  &__content {
+    @apply relative grid gap-2 py-6 px-4 bg-white rounded-xl shadow-[0_4px_16px_rgb(48_29_30/10%)];
+
+    &:hover {
+      .gift__content-img {
+        @apply -translate-y-[6px];
+      }
+    }
+
+    &-heart {
+      @apply absolute top-4 right-4 text-[1.5rem] text-red-500 cursor-pointer;
+    }
+
+    &-img {
+      @apply w-[100px] justify-self-center transition-all duration-400;
+    }
+
+    &-price {
+      @apply text-[18px] text-black font-semibold mb-1;
+    }
+
+    &-text {
+      @apply text-[15px];
+    }
+  }
+}
